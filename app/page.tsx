@@ -1,6 +1,8 @@
 'use client';
+import LeftSidebar from "@/components/LeftSidebar";
 import Live from "@/components/Live";
 import NavBar from "@/components/NavBar";
+import RightSidebar from "@/components/RightSidebar";
 
 export default function Page() {
   return (
@@ -8,7 +10,9 @@ export default function Page() {
       <NavBar />
 
       <section className="flex h-full flex-row">
-        <Live />
+        <LeftSidebar />
+          <Live />
+        <RightSidebar />
       </section>
     </main>
   );
